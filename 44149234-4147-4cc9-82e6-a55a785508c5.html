@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. Elena Martinez | Portfolio</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+            body {
+                font-family: 'Montserrat', sans-serif;
+                color: #333;
+                background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            }
+            header {
+                text-align: center;
+                padding: 2em;
+                background-color: #f5f5f5;
+                border-bottom: 1px solid #ddd;
+                animation: slideInDown 1s;
+            }
+            header h1 {
+                color: #4caf50;
+            }
+            header h3 {
+                color: #8f44ad;
+            }
+            header p {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            ul {
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+                justify-content: center;
+                animation: fadeIn 2s;
+            }
+            ul li {
+                border: 1px solid #4caf50;
+                border-radius: 50px;
+                margin: 0.5em 1em;
+                padding: 1em;
+                background-color: #f5f5f5;
+                color: #4caf50;
+                animation: flipInY 2s;
+            }
+            main {
+                max-width: 900px;
+                margin: 2em auto;
+                animation: fadeIn 2s;
+            }
+            section {
+                margin-bottom: 2em;
+                animation: zoomIn 2s;
+            }
+            h2 {
+                color: #4caf50;
+                border-bottom: 1px solid #ddd;
+            }
+            .project-title {
+                color: #8f44ad;
+            }
+            .project-title a {
+                color: #337ab7;
+            }
+            footer {
+                background-color: #f5f5f5;
+                text-align: center;
+                padding: 2em 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                animation: slideInUp 1s;
+            }
+
+            @keyframes fadeIn {
+                0% {opacity: 0}
+                100% {opacity: 1}
+            }
+            
+            @keyframes slideInDown {
+                0% {transform: translateY(-100%)}
+                100% {transform: translateY(0)}
+            }
+            
+            @keyframes slideInUp {
+                0% {transform: translateY(100%)}
+                100% {transform: translateY(0)}
+            }
+            
+            @keyframes flipInY {
+                0% { transform: perspective(400px) rotate3d(0, 1, 0, 90deg); opacity: 0; }
+                100% { transform: perspective(400px) rotate3d(0, 1, 0, 0); opacity: 1; }
+            }
+
+            @keyframes zoomIn {
+                0% {transform: scale(0)}
+                100% {transform: scale(1)}
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Dr. Elena Martinez</h1>
+            <h3>Data Scientist | AI Ethics Consultant | Speaker </h3>
+            <p>San Francisco, CA | Email: <a href="mailto:elena.martinez@futuresynth.ai">elena.martinez@futuresynth.ai</a> | Phone: (555) 123-4567 | LinkedIn: <a href="linkedin.com/in/elenamartinez">linkedin.com/in/elenamartinez</a></p>
+            <p>Artificial Intelligence (AI) Ethics Consultant and Data Scientist with over 12 years of experience in both academia and industry. Specializes in predictive modeling, deep learning, AI governance, and scalable data infrastructure. Proficient in Python, R, Scala, and SQL. Tools of choice include TensorFlow, Pytorch, MLflow, Airflow, and Docker.</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Predictive Modelling and Forecasting</li>
+                    <li>Deep Learning with Tensorflow and Pytorch</li>
+                    <li>Model Explainability and Transparency</li>
+                    <li>Artificial Intelligence Governance and Ethics</li>
+                    <li>Scalable Data Infrastructure with Docker and Airflow</li>
+                    <li>Proficient in Python, R, Scala, SQL programming languages</li>
+                    <li>Experience with MLflow for Machine Learning Lifecycle Management</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <p class="project-title"><a href="#">B2B Predictive Analytics Platform</a></p>
+                <p>Served as the Senior Data Scientist at FutureSynth AI, overseeing the full lifecycle of AI solution development, from design to deployment. Specifically, lead the development of a B2B predictive analytics platform that improved sales forecasts by 30%.</p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <p>PhD, Computational Social Science, University of Chicago (2011)</p>
+                <p>MSc, Computer Science, University of Oxford (2007)</p>
+                <p>BA, Philosophy, Stanford University (2005)</p>
+            </section>
+        
+            <section>
+                <h2>Experience</h2>
+                <p>Principal ML Engineer, Amazon Web Services (2018 - Present)</p>
+                <p>Senior Data Scientist, FutureSynth AI (2013 - 2018)</p>
+                <p>Postdoctoral Researcher, MIT Media Lab (2011 - 2013)</p>
+            </section>
+        </main>
+
+        <footer>
+            © 2023 - Portfolio Website of Dr. Elena Martinez
+        </footer>
+    </body>
+</html>
